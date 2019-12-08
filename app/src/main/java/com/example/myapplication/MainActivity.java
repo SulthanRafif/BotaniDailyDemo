@@ -1,8 +1,10 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.myapplication.Activities.TambahTanamanActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nambah(View view) {
-
-
+        Intent i = new Intent(MainActivity.this, TambahTanamanActivity.class);
+        startActivity(i);
     }
 }
