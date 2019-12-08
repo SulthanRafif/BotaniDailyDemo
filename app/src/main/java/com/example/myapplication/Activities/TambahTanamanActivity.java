@@ -3,12 +3,14 @@ package com.example.myapplication.Activities;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.example.myapplication.R;
 
-public class TambahTanamanActivity extends AppCompatActivity {
+public class TambahTanamanActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +22,19 @@ public class TambahTanamanActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
                 this, R.array.jenis_tanaman_hias, android.R.layout.simple_spinner_item
         );
+        spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
 
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String text = parent.getItemAtPosition(position).toString();
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
 
     }
 }
