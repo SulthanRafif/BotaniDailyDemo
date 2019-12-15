@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.TanamanHiasBuah.InformasiTanamanHiasBuah.BuahNagaActivity"
+    android:background="@color/warnaBackgroundApp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carter_one"
+        android:text="Buah Naga"
+        android:textColor="@color/warnaTulisan"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/kategori_tanaman"
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/buah_naga"
+        android:id="@+id/Gambar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="400dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Gambar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/deskripsi_tanaman"
+        android:fontFamily="@font/carter_one"
+        android:textSize="25dp"
+        android:text="Deskripsi Tanaman"
+        android:textColor="@color/warnaTulisan"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi_tanaman"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/isi_des"
+        android:textSize="10dp"
+        android:fontFamily="@font/carter_one"
+        android:textColor="@color/warnaTulisan"
+        android:text="Buah naga (Inggris: Pitaya) adalah buah dari beberapa jenis kaktus dari marga Hylocereus dan Selenicereus. Buah ini berasal dari Meksiko, Amerika Tengah dan Amerika Selatan namun sekarang juga dibudidayakan di negara-negara Asia seperti Taiwan, Vietnam, Filipina, Indonesia dan Malaysia. Buah ini juga dapat ditemui di Okinawa, Israel, Australia utara dan Tiongkok selatan. Hylocereus hanya mekar pada malam hari."
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/isi_des"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/cara_menanam"
+        android:fontFamily="@font/carter_one"
+        android:textSize="25dp"
+        android:text="Cara Menanam"
+        android:textColor="@color/warnaTulisan"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/cara_menanam"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/isi_menanam"
+        android:text="Carilah Induk yang bagus, yaitu : pernah berbuah minimal 4 kali, diameternya besar (ada yang menyarankan 8cm), panjangnya minimal 80cm. Carilah batang yang berwarna hijau kelabu, nampak sehat, keras dan tua. Calon bibit tidak boleh busuk atau terkena penyakit
+Potonglah batang yang panjangnya 80-120 cm, sisakan 20% bagian induknya agar tetap tumbuh, yang 80% ini untuk kita jadikan bibit. Setiap bibit usahakan mempunya minimla 4 calon tunas."
+        android:textSize="10dp"
+        android:fontFamily="@font/carter_one"
+        android:textColor="@color/warnaTulisan"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

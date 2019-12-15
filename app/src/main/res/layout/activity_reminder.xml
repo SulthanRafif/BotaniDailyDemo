@@ -4,23 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.ReminderActivity">
+    tools:context=".Activities.ReminderActivity"
+    android:background="@color/warnaBackgroundApp"
+    >
 
     <TextView
-        android:id="@+id/countdown_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="10:00"
-        android:textSize="50sp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:fontFamily="@font/carter_one"
+        android:text="Reminder"
+        android:textColor="@color/warnaTulisan"
+        android:textSize="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/kategori_tanaman"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_input"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:hint="Minutes"
+        android:inputType="number"
+        android:maxLength="4"
+        android:fontFamily="@font/carter_one"
+        android:textColor="@color/warnaTulisan"
+        android:textColorHint="@color/warnaTulisan"
+        android:backgroundTint="@color/warnaTulisan"
+        />
 
     <Button
-        android:id="@+id/countdown_button"
+        android:id="@+id/button_set"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start"
-        android:layout_below="@+id/countdown_text"
-        android:layout_centerHorizontal="true"/>
+        android:layout_alignTop="@+id/edit_text_input"
+        android:layout_toEndOf="@+id/edit_text_input"
+        android:text="Set"
+
+        android:fontFamily="@font/carter_one"
+        android:textColor="@color/warnaTulisan"
+        android:background="@color/hijauNavigasi"
+        />
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="00:00"
+        android:textColor="@color/warnaTulisan"
+        android:fontFamily="@font/carter_one"
+        android:textSize="60sp"
+
+        />
+
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:text="start"
+        android:fontFamily="@font/carter_one"
+        android:textColor="@color/warnaTulisan"
+        android:background="@color/hijauNavigasi"
+        />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/button_start_pause"
+        android:text="reset"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        android:fontFamily="@font/carter_one"
+        android:textColor="@color/warnaTulisan"
+        android:background="@color/hijauNavigasi"
+        />
 
 </RelativeLayout>

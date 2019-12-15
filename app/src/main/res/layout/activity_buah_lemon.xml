@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.TanamanHiasBuah.InformasiTanamanHiasBuah.BuahLemonActivity"
+    android:background="@color/warnaBackgroundApp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carter_one"
+        android:text="Buah Lemon"
+        android:textColor="@color/warnaTulisan"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/kategori_tanaman"
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/lemon"
+        android:id="@+id/Gambar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="400dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Gambar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/deskripsi_tanaman"
+        android:fontFamily="@font/carter_one"
+        android:textSize="25dp"
+        android:text="Deskripsi Tanaman"
+        android:textColor="@color/warnaTulisan"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi_tanaman"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/isi_des"
+        android:textSize="10dp"
+        android:fontFamily="@font/carter_one"
+        android:textColor="@color/warnaTulisan"
+        android:text="Sitrun, jeruk sitrun (dari bahasa Belanda, citroen), atau lemon adalah sejenis jeruk yang buahnya biasa dipakai sebagai penyedap dan penyegar dalam banyak seni boga dunia. Pohon berukuran sedang ini dapat mencapai 6 m dan tumbuh di daerah beriklim tropis dan sub-tropis serta tidak tahan akan cuaca dingin. Sitrun dibudidayakan di Spanyol, Portugal, Argentina, Brasil, Amerika Serikat dan negara-negara lainnya di sekitar Laut Tengah."
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/isi_des"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/cara_menanam"
+        android:fontFamily="@font/carter_one"
+        android:textSize="25dp"
+        android:text="Cara Menanam"
+        android:textColor="@color/warnaTulisan"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/cara_menanam"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/isi_menanam"
+        android:textSize="10dp"
+        android:fontFamily="@font/carter_one"
+        android:textColor="@color/warnaTulisan"
+        android:text="Pot harus memiliki kedalaman sekitar 15-18 cm dan berdiameter sekitar 8-13 cm untuk menanam bibit benih. Nantinya, bibit perlu dipindahkan ke pot yang lebih besar dengan diameter kira-kira sekitar 38-46 cm.
+Belilah lemon organik, kemudian potong dan keluarkan bijinya. Carilah biji yang besar dan penuh guna dijadikan benih terbaik. Jangan biarkan benih mengering, jadi diamkan di dalam mulut sebelum ditaburkan ke tanah."
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

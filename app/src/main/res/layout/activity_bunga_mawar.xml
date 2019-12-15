@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.TanamanHiasBunga.InformasiTanamanHiasBunga.BungaMawarActivity"
+    android:background="@color/warnaBackgroundApp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carter_one"
+        android:text="Bunga Mawar"
+        android:textColor="@color/warnaTulisan"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/kategori_tanaman"
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/bunga_mawar"
+        android:id="@+id/Gambar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="400dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Gambar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/deskripsi_tanaman"
+        android:fontFamily="@font/carter_one"
+        android:textSize="25dp"
+        android:text="Deskripsi Tanaman"
+        android:textColor="@color/warnaTulisan"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi_tanaman"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/isi_des"
+        android:text="Mawar adalah tanaman semak dari genus Rosa sekaligus nama bunga yang dihasilkan tanaman ini. Mawar liar yang terdiri lebih dari 100 spesies kebanyakan tumbuh di belahan bumi utara yang berudara sejuk. Spesies mawar umumnya merupakan tanaman semak yang berduri atau tanaman memanjat yang tingginya bisa mencapai 2 sampai 5 meter. Walaupun jarang ditemui, tinggi tanaman mawar yang merambat di tanaman lain bisa mencapai 20 meter. Sebagian besar spesies mempunyai daun yang panjangnya antara 5-15 cm, dua-dua berlawanan (pinnate)."
+        android:textColor="@color/warnaTulisan"
+        android:textSize="9dp"
+        android:fontFamily="@font/carter_one"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/isi_des"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/cara_menanam"
+        android:fontFamily="@font/carter_one"
+        android:textSize="25dp"
+        android:text="Cara Menanam"
+        android:textColor="@color/warnaTulisan"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/cara_menanam"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/isi_menanam"
+        android:text="Jemur tanaman mawar pukul 7 pagi sampai pukul 9 pagi. Penyiraman pada tanaman mawar jangan menggunakan air yang terlalu banyak dengan menggunakan air terlalu banyak akan menimbulkan pembusukkan akar. Pemupukkan pada tanaman mawar lakukan dua minggu sekaliagar menghasilkan bunga. Pemangkasan pada tanaman mawar lakukan 2 smapai 3 minggu sekali"
+        android:textColor="@color/warnaTulisan"
+        android:textSize="11dp"
+        android:fontFamily="@font/carter_one"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

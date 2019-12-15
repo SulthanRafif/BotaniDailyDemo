@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.notifications.TanamanHiasBunga.InformasiTanamanHiasBunga.BungaKembangSepatuActivity"
+    android:background="@color/warnaBackgroundApp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/carter_one"
+        android:text="Kembang Sepatu"
+        android:textColor="@color/warnaTulisan"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/kategori_tanaman"
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/kembang_sepatu"
+        android:id="@+id/Gambar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="400dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Gambar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/deskripsi_tanaman"
+        android:fontFamily="@font/carter_one"
+        android:textSize="25dp"
+        android:text="Deskripsi Tanaman"
+        android:textColor="@color/warnaTulisan"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsi_tanaman"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/isi_des"
+        android:textSize="10dp"
+        android:fontFamily="@font/carter_one"
+        android:textColor="@color/warnaTulisan"
+        android:text="Kembang Sepatu (Hibiscus rosa-sinensis L.) adalah tanaman semak suku Malvaceae yang berasal dari Asia Timur dan banyak ditanam sebagai tanaman hias di daerah tropis dan subtropis. Bunga besar, berwarna merah dan tidak berbau. Bunga dari berbagai kultivar dan hibrida bisa berupa bunga tunggal (daun mahkota selapis) atau bunga ganda (daun mahkota berlapis) yang berwarna putih hingga kuning, oranye hingga merah tua atau merah jambu."
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/isi_des"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/cara_menanam"
+        android:fontFamily="@font/carter_one"
+        android:textSize="25dp"
+        android:text="Cara Menanam"
+        android:textColor="@color/warnaTulisan"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        app:layout_constraintTop_toBottomOf="@+id/cara_menanam"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/isi_menanam"
+        android:textSize="10dp"
+        android:fontFamily="@font/carter_one"
+        android:textColor="@color/warnaTulisan"
+        android:text="
+Tanam kembang sepatu di dalam pot berisi tanah ringan berlempung. Kembang sepatu tidak membutuhkan campuran tanah khusus, tetapi menyukai media tanam yang ringan seperti lempung dan lumut gambut. Campuran tanah siap tanam standar biasanya sudah cukup. Anda bisa membuat kondisi tanah yang ideal bagi kembang sepatu dengan cara mencampurkan 1 bagian lempung kebun, 1 bagian lumut gambut, dan 1 bagian pasir halus atau kulit kayu"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
